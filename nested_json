@@ -1,0 +1,9 @@
+How to read nested json file and select some column from it?
+============================================================
+
+jsondf=spark
+        .read
+        .format("json")
+        .options("multiline",true)
+        .load("path of the file")
+        .selcet("mention the names of the columns")
